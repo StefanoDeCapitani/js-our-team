@@ -57,11 +57,11 @@ section {
   margin-right: 28px;
 }
 
-.team-container::after {
+/* .team-container::after {
   flex: auto;
 
   content: "";
-}
+} */
 
 .card-image {
   overflow: hidden;
@@ -80,7 +80,7 @@ section {
 .card-image:hover img {
   transform: scale(1.1, 1.1);
 
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .card-text {
@@ -103,7 +103,7 @@ section {
 }
 
 label {
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 input,
 select,
@@ -113,7 +113,7 @@ button {
   width: 100%;
   height: 2.65em;
   margin-bottom: 1em;
-  padding: .25em 1em;
+  padding: 0.25em 1em;
 
   border: 1px solid #cecece;
   border-radius: 4px;
