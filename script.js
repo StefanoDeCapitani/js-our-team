@@ -86,20 +86,23 @@ function createElementWithClass(tag, cssClass) {
   return cardText;
 }
 
-const nameInput = document.querySelector("#name");
-const roleInput = document.querySelector("#role");
-const imageInput = document.querySelector("#image");
 const addMemberButton = document.querySelector("#addMemberButton");
 
 addMemberButton.addEventListener("click", function () {
-  let nameEntry = nameInput.value;
-  let roleEntry = roleInput.value;
-  let imageEntry = imageInput.value;
+  const nameInput = document.querySelector("#name");
+  const roleInput = document.querySelector("#role");
+  const imageInput = document.querySelector("#image");
+
   let newMember = {
-    name: nameEntry,
-    role: roleEntry,
-    image: imageEntry,
+    name: nameInput.value,
+    role: roleInput.value,
+    image: imageInput.value,
   };
+
+  nameInput.value = "";
+  roleInput.value = "";
+  imageInput.value = "";
+
   teamMembers.push(newMember);
   displayMemberCard(newMember);
 });
